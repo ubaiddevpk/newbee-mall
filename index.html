@@ -4,10 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #btn{
+        background-color: red;
+        color: white;
+      }
+      .jsclassdouble{
+        width: 200px;
+        height: 100px;
+      }
+    </style>
   </head>
   <body>
     <h1>anonymas function</h1>
-    <button id="btn">button</button>
+    <button  id="btn" onclick="setTimeout(doublesize,3000)">button</button>
     <script>
       // anonymous function
       // var add = function(a,b){
@@ -27,7 +37,7 @@
       // });
 
       // for each loop
-      let arr = [1, 2, 3, 4, 5];
+      // let arr = [1, 2, 3, 4, 5];
       // arr.forEach(function(arr){
       //   console.log(arr);
 
@@ -77,9 +87,28 @@
 
       // let multiply=(num,num3)=>(num*num3)
       // console.log(multiply(4,2));
+ 
 
+        // let gretting=()=>console.log("hiloo worl");
+        // let twic=()=>{
+        //   gretting();
+        //     gretting();
+        // }
+        //     twic();
 
-      
+        let button=document.getElementById('btn');
+        function doublesize(){
+          button.classList.add('jsclassdouble')
+        }
+            
+          // button.addEventListener("click",button.classList.add('  .js-class-double'))
+
+       let ar=[3,4,5,6,7,4,3]
+       let sum=0;
+       ar.forEach(element =>sum=sum+element);
+       console.log(sum);
+        
+              
       
     </script>
   </body>
